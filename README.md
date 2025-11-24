@@ -47,12 +47,18 @@ sudo dpkg -i cloudflared-linux-amd64.deb
 bash start.sh
 ```
 
+## Pre-made phishing pages
+I have more templates at https://github.com/ARMed0ps/ShadowLogger-templates
+
 ## Adding custom phishing page templates
 ### 1. Upload folder of login page to the templates folder
-I have more templates at https://github.com/ARMed0ps/ShadowLogger-templates
-### 2. Edit templates.conf
+### 2. Create 'config.ini' in the folder of the login page
+### 3. Edit config.ini
 ```
 append the following line to the file:
-<Name>|<path>|<description>
+
+[meta]
+name="name"
+description="description'
 ```
 
