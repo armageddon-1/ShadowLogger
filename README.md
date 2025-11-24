@@ -54,9 +54,8 @@ I have more templates at https://github.com/ARMed0ps/ShadowLogger-templates
 ### 1. Upload folder of login page to the templates folder
 ### 2. Create 'config.ini' in the folder of the login page
 ### 3. Edit config.ini
+Append the following line to the file:
 ```
-append the following line to the file:
-
 [meta]
 name="name"
 description="description'
