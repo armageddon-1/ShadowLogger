@@ -48,7 +48,7 @@ bash start.sh
 ```
 
 ## Pre-made phishing pages
-I have more templates at https://github.com/ARMed0ps/ShadowLogger-templates
+I have more templates at [https://github.com/ARMed0ps/ShadowLogger-templates](https://github.com/armageddon-1/ShadowLogger-templates)
 
 ## Adding custom phishing page templates
 ### 1. Upload folder of login page to the templates folder
