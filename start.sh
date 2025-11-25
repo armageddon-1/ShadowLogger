@@ -30,22 +30,42 @@ EOF
 echo -e "${CYAN}                         Creator: ARMed0ps${NC}\n"
 
 # Step 0: Load templates from config
+
 declare -A TEMPLATE_PATHS
 declare -A TEMPLATE_DESC
 count=1
 
-echo -e "${GRAY}[*] Available templates:${NC}"
-while IFS="|" read -r name path desc; do
-    # Skip empty lines or comments
-    [[ -z "$name" || "$name" =~ ^# ]] && continue
-    TEMPLATE_PATHS[$count]="$path"
-    TEMPLATE_DESC[$count]="$desc"
-    echo -e "[$count] $name - $desc"
-    ((count++))
-done < "$CONFIG_FILE"
+BASE_DIR="Templates"
 
-# Ask user to choose
-read -p $'\nEnter number: ' choice
+echo -e "${GRAY}[*] Available templates:${NC}"
+
+# Loop through subfolders
+while IFS= read -r -d '' folder; do
+    CONFIG_FILE="$folder/config.ini"
+
+    if [[ -f "$CONFIG_FILE" ]]; then
+        NAME=""
+        DESC=""
+
+        # Parse INI fields safely
+        while IFS='=' read -r key value; do
+            case "$key" in
+                name) NAME="$value" ;;
+                description) DESC="$value" ;;
+            esac
+        done < <(grep -E "^(name|description)=" "$CONFIG_FILE")
+
+        TEMPLATE_PATHS[$count]="$folder"
+        TEMPLATE_DESC[$count]="$DESC"
+
+        echo -e "[$count] $NAME - $DESC"
+
+        ((count++))
+    fi
+done < <(find "$BASE_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
+
+echo
+read -r -p "Enter number: " choice
 
 if [[ -n "${TEMPLATE_PATHS[$choice]}" ]]; then
     TEMPLATE="${TEMPLATE_PATHS[$choice]}"
