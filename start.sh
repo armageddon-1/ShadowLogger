@@ -7,7 +7,6 @@ CYAN="\033[0;36m"
 NC="\033[0m"
 
 PORT=53142
-CONFIG_FILE="templates.conf"
 
 if [ -f ./utils.js ]; then
     for dir in Templates/*; do
@@ -27,7 +26,7 @@ cat << "EOF"
 \____/\_| |_/\_| |_/___/  \___/  \/  \/\_____/\___/ \____/\____/\____/\_| \_|
 EOF
 
-echo -e "${CYAN}                         Creator: ARMed0ps${NC}\n"
+echo -e "${CYAN}                         Creator: armageddon-1${NC}\n"
 
 # Step 0: Load templates from config
 
